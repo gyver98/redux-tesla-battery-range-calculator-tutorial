@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeslaCounter.css';
 
-const TeslaCounter = ({ initValues, currentValue, increment, decrement }) => (
+const TempTeslaCounter = ({ initValues, currentValue, tempIncrement, tempDecrement }) => (
   <div className="tesla-counter">
     <p className="tesla-counter__title">{initValues.title}</p>
     <div className="tesla-counter__container cf">
@@ -14,14 +14,14 @@ const TeslaCounter = ({ initValues, currentValue, increment, decrement }
           <button 
             onClick={(e) => {
               e.preventDefault();
-              increment(currentValue)}} 
+              tempIncrement(currentValue)}} 
             disabled={currentValue >= initValues.max} 
           >
           </button>
           <button 
-            onClick={(e) => {
+            onClick={(e) => { 
               e.preventDefault();
-              decrement(currentValue)}} 
+              tempDecrement(currentValue)}} 
             disabled={currentValue <= initValues.min} 
           >
           </button>
@@ -31,11 +31,11 @@ const TeslaCounter = ({ initValues, currentValue, increment, decrement }
   </div>  
 );
 
-TeslaCounter.propTypes = {
+TempTeslaCounter.propTypes = {
   currentValue: React.PropTypes.number,
-  increment: React.PropTypes.func,
-  decrement: React.PropTypes.func,
+  tempIncrement: React.PropTypes.func,
+  tempDecrement: React.PropTypes.func,
   initValues: React.PropTypes.object
 }
 
-export default TeslaCounter;
+export default TempTeslaCounter;
