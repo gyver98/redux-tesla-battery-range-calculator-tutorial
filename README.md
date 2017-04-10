@@ -5,3 +5,6 @@ In the part 1, after constructing the project through create-react-app, we imple
 Check out the [part 1](https://github.com/gyver98/part1-react-tesla-battery-range-calculator-tutorial)
 
 In this part, we will introduce Redux, a state management solution, to see how we can transform our application into an application that manages the state of the app with Redux.
+
+> For more details, check out my post [Building Tesla's battery range calculator with React Part 2 (Redux version)](https://gyver98.github.io/blog/development/react/2017/03/20/redux-tesla-battery-range-calculator-part2-english/)
+
